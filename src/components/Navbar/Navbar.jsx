@@ -4,6 +4,7 @@ import { IoMdSearch } from "react-icons/io";
 import { FaCartShopping } from "react-icons/fa6";
 import { FaCaretDown } from "react-icons/fa";
 import DarkMode from "./DarkMode";
+// import { link } from "fs";
 
 const Menu = [
   {
@@ -13,22 +14,22 @@ const Menu = [
   },
   {
     id: 2,
-    name: "Top Rated",
+    name: "About Us",
     link: "/#services",
   },
   {
     id: 3,
-    name: "Kids Wear",
+    name: "Offers / Combos",
     link: "/#",
   },
   {
     id: 3,
-    name: "Mens Wear",
+    name: "Quality & Safety",
     link: "/#",
   },
   {
     id: 3,
-    name: "Electronics",
+    name: "Testimonials / Reviews",
     link: "/#",
   },
 ];
@@ -36,31 +37,46 @@ const Menu = [
 const DropdownLinks = [
   {
     id: 1,
-    name: "Trending Products",
+    name: "Rockets & Skyshots",
     link: "/#",
   },
   {
     id: 2,
-    name: "Best Selling",
+    name: "Ground Crackers",
     link: "/#",
   },
   {
     id: 3,
-    name: "Top Rated",
+    name: "Fountains",
     link: "/#",
+  },
+  {
+    id: 4,
+    name: "Kids Special",
+    link: "#",
+  },
+  {
+    id: 5,
+    name: "Sparklers",
+    link: "#",
+  },
+  {
+    id: 6,
+    name: "Gift Packs",
+    link: "#",
   },
 ];
 
 const Navbar = ({ handleOrderPopup }) => {
   return (
-    <div className="shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200 relative z-40">
+    <div className="w-full shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200 fixed z-40">
       {/* upper Navbar */}
       <div className="bg-primary/40 py-2">
         <div className="container flex justify-between items-center">
           <div>
             <a href="#" className="font-bold text-2xl sm:text-3xl flex gap-2">
               <img src={Logo} alt="Logo" className="w-10" />
-              Shopsy
+              Prithvik
             </a>
           </div>
 
@@ -109,7 +125,7 @@ const Navbar = ({ handleOrderPopup }) => {
           {/* Simple Dropdown and Links */}
           <li className="group relative cursor-pointer">
             <a href="#" className="flex items-center gap-[2px] py-2">
-              Trending Products
+              Crackers
               <span>
                 <FaCaretDown className="transition-all duration-200 group-hover:rotate-180" />
               </span>
